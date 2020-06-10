@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="Enterate de todas las noticias relacionadas con eventos, presentaciones, talleres, celebraciones y nuevas publicaciones de nuestros guionistas e ilustradores.">
+	<meta name="keywords" content="Cómics, cómic, comics en Uruguay, historietas en Uruguay, noticias, talleres de historietas, eventos, publicaciones, libros, historietas, AUCH!, newsletter AUCH!">
+	<title>Noticias de AUCH!: eventos, talleres y nuevas publicaciones</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">  
+</head>
+<body class="m-0">
+	<div class="modal" id="modal-news" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bg bg-dark">
+					<h5 class="modal-title font-weight-bolder text-light">Confirmación</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body bg bg-dark">
+					<h5 class="text-light">Quiero suscribirme a AUCH! Noticias</h5>
+				</div>
+				<div class="modal-footer bg bg-dark">
+					<button type="button" class="btn btn-danger btn-modal" data-dismiss="modal">No</button>
+					<button type="button" class="btn btn-success btn-modal" data-target="confirmacion-newsletter.html">¡Sí, quiero!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="container-fluid my-0">
+		<div class="header row d-flex flex-row align-content-stretch justify-content-between align-items-center justify-items-center mb-3">
+			<div class="logo col-2">
+				<a href="index.html">
+					<img src="img/logo2.png" alt="auch">
+				</a>
+			</div>
+			<div class="nav col-8 col-s-10" id="nav-index">
+				<nav class="d-flex flex-row justify-content-around align-content-stretch align-items-stretch justify-items-stretch m-0">
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="index.html">Home</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="historia.html">Historia</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="artistas.html">Artistas</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="libros.html">Publicaciones</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="#">Noticias</a>
+					<div class="dropdown pt-4">
+  						<a class="dropdown-toggle text-decoration-none font-weight-bolder" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contacto
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">	
+    						<a class="no-hover dropdown-item pt-4 mt-0" href="contacto.html">Dejanos un mensaje</a>
+    						<div class="dropdown-divider"></div>
+						    <a class="no-hover dropdown-item pt-4" role="button" href="#modal-news" data-toggle="modal">Suscribite a AUCH! Noticias</a>
+  						</div>
+					</div>
+				</nav>	
+			</div>
+			<div class="buscador col-2">
+				<input type="text" placeholder="Buscar publicaciones" id="search" class="border border-primary">
+			</div>
+		</div>
+	</header>
+
+	<div class="header-noticias">
+			<img src="img/generico-auch.jpg" alt="Noticias de AUCH" class="header-generico">
+		</div>
+	<div class="undostres">
+		<h1 class="main-title" id="main-noticias">Noticias de AUCH!</h1> 
+	</div>
+
+	<div class="first-row">
+		<div id="fotodestacada">
+			<a href="articulos/ideasmas.html">
+				<img src="img/articulos/ideasmas.jpg" alt="AUCH presente en la feria IDEAS MAS">
+			</a>
+		</div>
+		<div class="articulos" id="textodestacado">
+			<a href="articulos/ideasmas.html">				
+				<h2 class="titulos-notas">AUCH! presente en la feria IDEAS+</h2>
+			</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquam sapiente consectetur beatae repellendus nemo nisi...</p>
+				<a href="articulos/ideasmas2019.html" class="notas-links"> Continuar leyendo...</a>
+		</div>
+		
+		<div id="fotodos">
+			<a href="articulos/feriadellibro2019.html">
+				<img src="img/articulos/feriadellibro.jpg" alt="AUCH en la 42 Feria del Libro de Montevideo">
+			</a>
+		</div>
+		<div class="articulos" id="textodos">
+				<a href="articulos/feriadellibro2019.html" class="notas-links">
+					<h2 class="titulos-notas">Feria Internacional del Libro</h2>
+				</a>
+		</div>
+		<div id="fototres">
+			<a href="articulos/diadelahistorieta.html">
+				<img src="img/articulos/diadelahistorieta.jpg"  alt="16 de setiembre dia de la Historieta Hruguaya">
+			</a>
+		</div>
+		<div class="articulos" id="textotres">
+			<a href="articulos/diadelahistorieta.html" class="notas-links">			
+					<h2 class="titulos-notas">16/9 día de la Historieta Uruguaya</h2>
+				</a>
+		</div>
+	</div>
+
+	<div class="second-row">
+		<article>
+			<div class="articulos" id="bottom-cero">
+				<img src="img/articulos/tallerdecomics.jpg" alt="Taller de comics en Paso de los Toros">
+				<h2 class="titulos-notas">Taller de cómics Paso de Los Toros</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi...</p>
+				<a href="articulos/tallerpasodelostoros.html" class="notas-links">Continuar leyendo...</a>
+			</div>
+		</article> 
+	
+		<article>
+			<div class="articulos" id="bottom-uno">
+				<img src="img/articulos/concursopaysandu.jpg"  alt="Concurso de Historietas en Paysandu">
+				<h2 class="titulos-notas">Concurso de Historetas <br> en Paysandú</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis...</p>
+				<a href="articulos/concursopaysandu.html" class="notas-links">Continuar leyendo...</a>
+			</div>
+		</article> 
+	
+		<article>
+			<div class="articulos" id="bottom-dos">
+				<img src="img/articulos/Primavera.jpg" alt="Lanzamiento de Primavera por AUCH">
+				<h2 class="titulos-notas">Lanzamiento de la  recopilación Primavera</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque repellendus...</p>
+				<a href="articulos/primavera.html" class="notas-links">Continuar leyendo...</a>
+			</div>
+		</article>
+
+		<article>
+			<div class="articulos" id="bottom-tres">
+				<img src="img/articulos/encuentroliterario.jpg" alt="Encuentro Literario en el Museo Zorrilla">
+				<h2 class="titulos-notas">Encuentro literario en el Museo Zorrilla</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, debitis...</p>
+				<a href="articulos/primavera.html" class="notas-links">Continuar leyendo...</a>
+			</div>
+		</article>
+
+	</div>
+
+	<br>
+	<a href="articulos/anteriores.html" id="anteriores">Noticias anteriores >></a>
+
+	<p class="linea-final">¿Interesado en enterarte de todas las novedades? Suscribite a la <a href="contacto.html">newsletter de AUCH!</a></p>
+
+	<footer class="container-fluid my-0">
+		<div class="row d-flex flex-row justify-content-between align-items-center mt-4">
+			<p class="text-light col-7">© 2011-2020 AUCH! Todos los derechos reservados</p>
+			<div class="redes col-2 mr-0 px-5">
+				<a href="https://www.facebook.com/auchistorietas" target="_blank">
+					<img src="img/facebook.png" class="rounded-lg mx-2 my-3" id="icon-facebook">
+				</a>
+				<a href="https://twitter.com/auchistorietas" ta rget="_blank">
+					<img src="img/twitter.png" class="rounded-lg mx-2 my-3" id="icon-twitter">
+				</a>
+				<a href="https://www.instagram.com/auchistorietas" target="_blank">
+					<img src="img/instagram.png" class="rounded-lg ml-2 my-3" id="icon-instagram">
+				</a>
+				</p>
+			</div>
+	</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 1rem;
+  font-family: "Open Sans"; }
+
+header {
+  height: 11vh;
+  background-color: #262626; }
+  header .header {
+    background-color: #262626; }
+  header .logo img {
+    width: 10vw; }
+  header nav a {
+    font-size: 1.3rem;
+    font-family: "bitter";
+    height: 80px;
+    color: white;
+    padding-right: 2vw;
+    padding-left: 2vw; }
+    header nav a:hover {
+      color: #1c82ff;
+      background-color: #eee;
+      border: 1.5px solid;
+      transition-timing-function: ease;
+      transition-duration: 300ms;
+      font-size: 1.5rem; }
+  header .no-hover:hover {
+    font-size: 1.3rem;
+    transition-timing-function: none;
+    transition-duration: none; }
+  header #search {
+    height: 5vh;
+    width: 15vw; }
+
+footer {
+  height: 10vh;
+  background-color: #262626; }
+  footer img {
+    width: 38px; }
+
+#icon-facebook {
+  border: 1px solid #3b5998; }
+
+#icon-twitter {
+  border: 1px solid #1c82ff; }
+
+#icon-instagram {
+  border: 1px solid #8a3ab9; }
+
+.main-title {
+  color: #1c82ff;
+  font-family: "bitter";
+  font-weight: bolder;
+  font-size: 2.2rem; }
+
+.subtitles {
+  color: #75b3ff;
+  font-weight: normal;
+  font-style: italic; }
+
+.video {
+  position: relative;
+  background-color: #fff; }
+  .video video {
+    position: relative;
+    left: 18%;
+    border: 2px solid rgba(0, 0, 0, 0.8); }
+
+.overlay-video {
+  background-color: rgba(0, 0, 0, 0.25);
+  max-width: 260px;
+  position: absolute;
+  top: 17vh;
+  left: 19%;
+  font-size: 1.3rem;
+  z-index: 555; }
+
+.artista-home {
+  position: relative; }
+  .artista-home img {
+    width: 100%; }
+
+.overlay-artistas a {
+  position: absolute;
+  left: 8%;
+  bottom: 15%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 1px solid black; }
+  .overlay-artistas a:hover {
+    transform: scale(1.1, 1.1);
+    letter-spacing: 2px;
+    border: 2px solid black; }
+
+.btn-slideshow:hover {
+  transform: scale(1.1, 1.1);
+  border: 2px solid black; }
+
+.article-home {
+  background-color: #1c82ff;
+  font-size: 0.9rem;
+  max-width: 142px; }
+  .article-home:hover {
+    opacity: 0.5; }
+
+.article-home img {
+  width: 140px; }
+
+.historia {
+  color: grey;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  margin-left: 1vw;
+  padding: 2px;
+  padding-top: 0; }
+  .historia p {
+    margin-bottom: 1vh; }
+
+.imagenes-historia {
+  width: 250px;
+  padding-bottom: 0px;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+  border-radius: 20px; }
+
+.imagenes-historiados {
+  height: 250px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-left: 1vw;
+  border-radius: 20px;
+  margin-bottom: 1vh; }
+
+#header-artistas {
+  padding-left: 0px;
+  margin-left: 1vw; }
+  #header-artistas img {
+    border: 2px solid; }
+
+.tabla-artistas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "cabezal cabezal cabezal" "contenido foto contenido";
+  align-items: stretch;
+  justify-items: stretch;
+  margin-top: 2vh;
+  margin-left: 10%;
+  padding: 1vw;
+  width: 80%; }
+
+.cabezal-artistas, .cabezal-libros {
+  font-family: "bitter";
+  font-size: 1.8rem;
+  text-align: center;
+  color: darkblue;
+  border: 3px solid #1c82ff;
+  background-color: #aaa; }
+
+.celda-artistas, .celda-libros, .celda-portada {
+  font-size: 1.1rem;
+  border: 2px solid #1c82ff;
+  border-top: 1px solid #1c82ff;
+  border-bottom: 1px solid #1c82ff;
+  text-align: center;
+  background-color: #eee;
+  padding-top: 25%; }
+
+.foto-artistas {
+  border-top: 1px solid #1c82ff;
+  border-bottom: 1px solid #1c82ff;
+  text-align: center;
+  padding-top: 1vh;
+  justify-content: center;
+  background-color: #eee; }
+
+.perfil-artistas {
+  width: 200px;
+  border: 2px solid;
+  margin-left: 100px;
+  margin-right: 100px; }
+
+.linea-final {
+  color: #1c82ff;
+  font-weight: bolder;
+  margin-left: 10%;
+  margin-top: 1.5vh; }
+  .linea-final a {
+    color: blue;
+    text-decoration: underline; }
+
+#final-artistas a {
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  font-size: 1.3rem;
+  color: red; }
+
+@keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#title-libros {
+  margin-left: 35%; }
+
+.tabla-libros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "cabezal cabezal cabezal cabezal" "contenido contenido foto contenido";
+  align-items: stretch;
+  justify-items: stretch;
+  margin-left: 10%;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  width: 80%; }
+
+.celda-libros {
+  font-size: 1rem;
+  padding-top: 30%; }
+
+.celda-portada {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .celda-portada img:hover {
+    transform: scale(2.3, 2.3);
+    transition-timing-function: ease-in;
+    transition-duration: 300ms; }
+
+.cabezal-libros {
+  font-size: 1.3rem; }
+
+.portadas-libros {
+  width: 150px;
+  border: 2px solid;
+  margin-left: 100px;
+  margin-right: 100px; }
+
+.mas-libros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.header-generico {
+  position: relative;
+  border: 1px solid;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-left: 1vw; }
+
+#main-noticias {
+  text-align: center;
+  margin-bottom: 3vh; }
+
+.header-noticias {
+  position: relative;
+  left: 20%; }
+
+.articulos {
+  border: 2px solid black;
+  color: white;
+  background-color: #1c82ff;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+  .articulos h2, .articulos p, .articulos a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white;
+    padding-top: 0;
+    margin-top: 0; }
+
+.first-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40% 10% 20% 20% 10%;
+  grid-template-areas: "fotouno fotodos" "fotouno textodos" "fotouno fototres" "textouno fototres" "textouno textotres";
+  grid-column-gap: 5px;
+  align-items: stretch;
+  justify-items: stretch;
+  align-content: stretch;
+  justify-content: stretch;
+  margin: 0;
+  margin-left: 5vw;
+  margin-bottom: 1vh;
+  padding: 0;
+  height: 430px;
+  width: 90%; }
+  .first-row img:hover {
+    opacity: 0.5; }
+  .first-row .articulos a {
+    padding: 0;
+    margin: 0; }
+
+#fotodestacada {
+  grid-area: fotouno;
+  border: 2px solid;
+  overflow: hidden; }
+
+#textodestacado {
+  grid-area: textouno;
+  padding-bottom: 1vh; }
+
+#textodestacado p {
+  line-height: 1.2rem;
+  margin-top: 1vh;
+  margin-bottom: 1vh; }
+
+#fotodos, #fototres {
+  grid-area: fotodos;
+  border: 2px solid;
+  border-bottom: 0;
+  overflow: hidden; }
+
+#textodos {
+  grid-area: textodos; }
+
+#fototres {
+  grid-area: fototres; }
+
+#textotres {
+  grid-area: textotres; }
+
+.second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5vh;
+  margin-left: 3%;
+  margin-right: 3%; }
+  .second-row .articulos {
+    width: 304px;
+    padding-bottom: 5px; }
+  .second-row h2 {
+    font-size: 1rem; }
+  .second-row img {
+    border-bottom: 2px solid black;
+    width: 300px;
+    padding: 0;
+    margin: 0; }
+  .second-row article:hover {
+    opacity: 0.5; }
+
+.notas-links {
+  font-weight: bolder;
+  margin-top: 1vh; }
+
+.titulos-notas {
+  font-style: italic;
+  font-size: 1.3rem;
+  font-family: "bitter"; }
+
+#anteriores {
+  position: relative;
+  left: 45%; }
+
+#form-title {
+  text-align: center; }
+
+form {
+  margin-top: 3vh;
+  margin-right: 0;
+  position: relative;
+  left: 40%;
+  border: 2px solid #1c82ff;
+  max-width: 22vw;
+  padding-left: 20px;
+  padding-right: 0;
+  padding-top: 5px;
+  padding-bottom: 10px; }
+  form div {
+    margin-top: 0.5vh; }
+  form input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    max-width: 10vw; }
+  form label {
+    margin-right: 1vw; }
+  form select {
+    margin-bottom: 1vh; }
+  form label, form #newsletter {
+    font-size: 0.8rem; }
+
+#comentarios {
+  height: 100px;
+  width: 300px; }
+
+#limpiar {
+  margin-left: 2vw;
+  margin-top: 1vh; }
+
+.carousel-caption {
+  background-color: #262626;
+  opacity: 0.7; }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #262626;
+  opacity: 0.5; }
+
+.btn {
+  font-family: bitter;
+  font-weight: bolder; }
+
+#dropdown-contacto {
+  font-family: bitter;
+  font-size: 1.3rem; }
+
+.close {
+  color: white; }
+  .close:hover {
+    color: white; }
+
+.btn-modal {
+  border: 1px solid #aaa; }
+
+.dropdown-menu {
+  padding-top: 0;
+  margin-top: 0; }
+
+@media (max-width: 991px) {
+  header {
+    height: 55px;
+    padding-bottom: 0; }
+    header .header {
+      height: 55px; }
+    header .logo img {
+      padding: 0;
+      margin: 0; }
+    header nav a {
+      font-size: 1.1rem;
+      padding-left: 1vw; }
+  #bottom-tres {
+    display: none; }
+  .header-noticias {
+    left: 1%; }
+    .header-noticias img {
+      max-width: 95%;
+      margin-top: 2vh; }
+  .titulos-notas {
+    font-size: 1.1rem; }
+  .second-row .articulos {
+    max-width: 30vw; }
+  .second-row img {
+    max-width: 30vw; }
+  #search {
+    display: none; }
+  .linea-final {
+    margin-left: 0; } }
+
+@media (max-width: 575px) {
+  header nav a {
+    font-size: .6rem;
+    padding: .2rem; }
+  .articulos p {
+    display: none; }
+  #textodos h2, #textotres h2 {
+    font-size: .7rem;
+    position: relative;
+    top: 15%; }
+  .second-row .articulos p {
+    display: none; }
+  .second-row .articulos {
+    max-width: 40vw;
+    position: relative;
+    left: 10%; }
+  #anteriores {
+    left: 25%; }
+  .linea-final {
+    text-align: center;
+    font-size: .8rem; }
+  #bottom-dos {
+    display: none; }
+  .second-row h2 {
+    font-size: 1rem; }
+  footer {
+    font-size: .8rem;
+    margin: 0; }
+  footer p {
+    margin-bottom: 0;
+    text-align: center; }
+  .redes img {
+    width: 25px;
+    margin-top: 0;
+    position: relative;
+    left: 25%;
+    top: 0%; } }

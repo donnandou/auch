@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Sitio oficial de AUCH!: todo sobre cómics, historietas y novelas gráficas publicados en Uruguay. Conocé nuestros libros y autores, y enterate de novedades.">
+	<meta name="keywords" content="Cómics, cómic, historietas, Uruguay, AUCH!, comics nacionales, historietas en Uruguay, cómics en Uruguay, comprar historietas, comprar cómics">
+	<title>AUCH! - Asociación Uruguaya de Creadores de Historietas</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
+</head>
+<body class="m-0">
+	<div class="modal" id="modal-news" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bg bg-dark">
+					<h5 class="modal-title font-weight-bolder text-light">Confirmación</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body bg bg-dark">
+					<h5 class="text-light">Quiero suscribirme a AUCH! Noticias</h5>
+				</div>
+				<div class="modal-footer bg bg-dark">
+					<button type="button" class="btn btn-danger btn-modal" data-dismiss="modal">No</button>
+					<button type="button" class="btn btn-success btn-modal" data-target="confirmacion-newsletter.html">¡Sí, quiero!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="container-fluid my-0">
+		<div class="header row d-flex flex-row align-content-stretch justify-content-between align-items-center justify-items-center mb-3">
+			<div class="logo col-2">
+				<a href="#">
+					<img src="img/logo2.png" alt="auch">
+				</a>
+			</div>
+			<div class="nav col-8 col-s-10" id="nav-index">
+				<nav class="d-flex flex-row justify-content-around align-content-stretch align-items-stretch justify-items-stretch m-0">
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="#">Home</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="historia.html">Historia</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="artistas.html">Artistas</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="libros.html">Publicaciones</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="noticias.html">Noticias</a>
+					<div class="dropdown pt-4">
+  						<a class="dropdown-toggle text-decoration-none font-weight-bolder" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contacto
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">	
+    						<a class="no-hover dropdown-item pt-4 mt-0" href="contacto.html">Dejanos un mensaje</a>
+    						<div class="dropdown-divider"></div>
+						    <a class="no-hover dropdown-item pt-4" role="button" href="#modal-news" data-toggle="modal">Suscribite a AUCH! Noticias</a>
+  						</div>
+					</div>
+				</nav>	
+			</div>
+			<div class="buscador col-2">
+				<input type="text" placeholder="Buscar publicaciones" id="search" class="border border-primary">
+			</div>
+		</div>
+	</header>
+
+	<section class="container-fluid">
+		<div class="video mt-3"> 
+			<video src="img/intro-flipbook.mp4" type="video/mp4" autoplay loop muted></video>
+				<div class="overlay-video text-center border border-dark"> <!-- Tengo que conseguir un mejor video (16:9) pero logré el overlay-->
+				<h1 class="main-title text-light">AUCH! Asociación Uruguaya de Creadores de Historietas</h1>
+				</div>
+	 	</div>
+	 </section>
+	 
+	 <section class="container-fluid">
+	 	<div class="artista-home">
+	 		<img src="img/artistas.jpg" alt="Artistas de AUCH" id="artistas-home">
+	 			<div  class="overlay-artistas">
+	 				<a href="artistas.html" role="button" class="btn btn-primary btn-lg">Conocelos</a>
+	 			</div>
+	 	</div>
+	 </section>
+
+	<section class="container-fluid mb-0">
+		 <div id="carousel-home" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			  	<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+			  	<li data-target="#carousel-home" data-slide-to="1"></li>
+			  	<li data-target="#carousel-home" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			  	<div class="carousel-item active">
+			        <img src="img/slide-pancho.jpg" class="d-block w-100" alt="Pancho el Pitbull" id="slidecero">
+			        <div class="carousel-caption d-none d-md-block">
+			        	<h5>Pancho el Pitbull</h5>
+			        	<p>Una tira cómica publicada originalmente en inglés con el guión de Neal Wooten y los dibujos de Nico Peruzzo.</p>
+			        	<a href="libros/pancho.html" role="button" class="btn btn-primary btn-lg btn-slideshow px-5">+ info</a>
+			        </div>
+			    </div>
+			  	<div class="carousel-item">
+			    	<img src="img/slide-procer-zombie.jpg" class="d-block w-100" alt="Procer Zombie" id ="slideuno">
+			        <div class="carousel-caption d-none d-md-block">
+			        	<h5>Procer Zombie</h5>
+			        	<p>Luego de 165 años, un antiguo prócer de América vuelve a la vida para establecer orden y equilibrio en la ciudad de Montevideo.</p>
+			        	<a href="libros/procer-zombie.html" role="button" class="btn btn-primary btn-lg btn-slideshow px-5">+ info</a>
+			        </div>
+			    </div>
+			  	<div class="carousel-item">
+			      <img src="img/slide-firebunny.jpg" class="d-block w-100" alt="Firebunny" id="slidedos">
+			      <div class="carousel-caption d-none d-md-block">
+			        	<h5>Firebunny</h5>
+			        	<p>El conejo es el animal más tierno que existe... ¡¡hasta que agarra un lanzallamas!!</p>
+			        	<a href="libros/firebunny.html" role="button" class="btn btn-primary btn-lg btn-slideshow px-5">+ info</a>
+			        </div>
+			    </div>
+			 </div>
+			 <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+			 	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			 	<span class="sr-only">Anterior</span>
+			 </a>
+			 <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+			 	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			 	<span class="sr-only">Siguiente</span>
+			 </a>
+		</div>
+	</section>
+
+	<section class="container-fluid text-center">
+	<h2 id="noticias-home"><a href="noticias.html" class="subtitles">Noticias recientes</a></h2> 
+	<div class="container-fluid m-0">
+		<div class="row justify-content-center m-0">
+				<div class="article-home col-3 mr-5 px-0 pb-2 text-center border border-dark" id="thumb1">
+						<a href="articulos/nota1.html">
+							<img src="img/articulos/ideasmas-thumb.jpg" alt="AUCH presente en la feria IDEAS MAS">
+						</a><br>
+					<a class="text-light text-decoration-none text-center"  href="articulos/nota1.html" class="text-decoration-none">AUCH! en la IDEAS+</a>
+				</div> 
+				<div class="article-home col-3 px-0 mr-5 pb-2 text-center border border-dark" id="thumb2">
+					<a href="articulos/nota2.html">
+						<img src="img/articulos/feriadellibro-thumb.jpg" alt="AUCH en la 42 Feria Internacional del Libro">
+					</a><br>
+						<a class="text-light text-decoration-none text-center"  href="articulos/nota2.html" class="text-decoration-none">42ª Feria del Libro</a>
+				</div>
+				<div class="article-home col-3 px-0 mx-0 pb-2 text-center border border-dark" id="thumb3">
+					<a href="articulos/nota3.html">
+						<img src="img/articulos/diadelahistorieta-thumb.jpg" alt="16 de setiembre dia de la historieta Uruguaya">
+					</a><br>
+					<a class="text-light text-decoration-none text-center" href="articulos/nota3.html" class="text-decoration-none">Día de la historieta</a>
+				</div>
+		</div>
+	</div>
+	</section>
+
+
+	<footer class="container-fluid my-0">
+		<div class="row d-flex flex-row justify-content-between align-items-center mt-4">
+			<p class="text-light col-7">© 2011-2020 AUCH! Todos los derechos reservados</p>
+			<div class="redes col-2 mr-0 px-5">
+				<a href="https://www.facebook.com/auchistorietas" target="_blank">
+					<img src="img/facebook.png" class="rounded-lg mx-2 my-3" id="icon-facebook">
+				</a>
+				<a href="https://twitter.com/auchistorietas" ta	rget="_blank">
+					<img src="img/twitter.png" class="rounded-lg mx-2 my-3" id="icon-twitter">
+				</a>
+				<a href="https://www.instagram.com/auchistorietas" target="_blank">
+					<img src="img/instagram.png" class="rounded-lg ml-2 my-3" id="icon-instagram">
+				</a>
+			</p>
+		</div>
+	</footer>
+	
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Catálogo completo de publicaciones de guionistas e ilustradores de AUCH!. Todas las portadas, ficha técnica, precio e información de compra de los libros.">
+	<meta name="keywords" content="Cómics, cómic, historietas, libros, publicaciones, cómics en Uruguay, historietas en Uruguay, ver historietas, comprar historietas en Uruguay, comprar cómics en Uruguay">
+	<title>Publicaciones de AUCH!: cómics e historietas de Uruguay</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
+</head>
+<body class="m-0">
+	<div class="modal" id="modal-news" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bg bg-dark">
+					<h5 class="modal-title font-weight-bolder text-light">Confirmación</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body bg bg-dark">
+					<h5 class="text-light">Quiero suscribirme a AUCH! Noticias</h5>
+				</div>
+				<div class="modal-footer bg bg-dark">
+					<button type="button" class="btn btn-danger btn-modal" data-dismiss="modal">No</button>
+					<button type="button" class="btn btn-success btn-modal" data-target="confirmacion-newsletter.html">¡Sí, quiero!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="container-fluid my-0">
+		<div class="header row d-flex flex-row align-content-stretch justify-content-between align-items-center justify-items-center mb-3">
+			<div class="logo col-2">
+				<a href="index.html">
+					<img src="img/logo2.png" alt="auch">
+				</a>
+			</div>
+			<div class="nav col-8 col-s-10" id="nav-index">
+				<nav class="d-flex flex-row justify-content-around align-content-stretch align-items-stretch justify-items-stretch m-0">
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="index.html">Home</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="historia.html">Historia</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="artistas.html">Artistas</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="#">Publicaciones</a>
+					<a class="pt-4 text-decoration-none font-weight-bolder" href="noticias.html">Noticias</a>
+					<div class="dropdown pt-4">
+  						<a class="dropdown-toggle text-decoration-none font-weight-bolder" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contacto
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">	
+    						<a class="no-hover dropdown-item pt-4 mt-0" href="contacto.html">Dejanos un mensaje</a>
+    						<div class="dropdown-divider"></div>
+						    <a class="no-hover dropdown-item pt-4" role="button" href="#modal-news" data-toggle="modal">Suscribite a AUCH! Noticias</a>
+  						</div>
+					</div>
+				</nav>	
+			</div>
+			<div class="buscador col-2">
+				<input type="text" placeholder="Buscar publicaciones" id="search" class="border border-primary">
+			</div>
+		</div>
+	</header>
+
+	<section class="container-fluid">
+		 <div id="carousel-home" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			  	<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+			  	<li data-target="#carousel-home" data-slide-to="1"></li>
+			  	<li data-target="#carousel-home" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			  	<div class="carousel-item active">
+			        <img src="img/slide-pancho.jpg" class="d-block w-100" alt="Pancho el Pitbull" id="slidecero">
+			        <div class="carousel-caption d-none d-md-block">
+			        	<h5>Pancho el Pitbull</h5>
+			        	<p>Una tira cómica publicada originalmente en inglés con el guión de Neal Wooten y los dibujos de Nico Peruzzo.</p>
+			        	<a href="libros/pancho.html" role="button" class="btn btn-primary btn-lg btn-slideshow px-5">+ info</a>
+			        </div>
+			    </div>
+			  	<div class="carousel-item">
+			    	<img src="img/slide-procer-zombie.jpg" class="d-block w-100" alt="Procer Zombie" id ="slideuno">
+			        <div class="carousel-caption d-none d-md-block">
+			        	<h5>Procer Zombie</h5>
+			        	<p>Luego de 165 años, un antiguo prócer de América vuelve a la vida para establecer orden y equilibrio en la ciudad de Montevideo.</p>
+			        	<a href="libros/procer-zombie.html" role="button" class="btn btn-primary btn-lg btn-slideshow px-5">+ info</a>
+			        </div>
+			    </div>
+			  	<div class="carousel-item">
+			      <img src="img/slide-firebunny.jpg" class="d-block w-100" alt="Firebunny" id="slidedos">
+			      <div class="carousel-caption d-none d-md-block">
+			        	<h5>Firebunny</h5>
+			        	<p>El conejo es el animal más tierno que existe... ¡¡hasta que agarra un lanzallamas!!</p>
+			        	<a href="libros/firebunny.html" role="button" class="btn btn-primary btn-lg btn-slideshow px-5">+ info</a>
+			        </div>
+			    </div>
+			 </div>
+			 <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+			 	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			 	<span class="sr-only">Anterior</span>
+			 </a>
+			 <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+			 	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			 	<span class="sr-only">Siguiente</span>
+			 </a>
+		</div>
+	</section>
+	
+	<h1 class="main-title" id="title-libros">Publicaciones de AUCH!</h1> 
+	</div>	
+	
+	<div class="tabla-libros">
+			<div class="cabezal-libros">Nombre</div>
+			<div class="cabezal-libros">Autor/es</div>
+			<div class="cabezal-libros">Portada</div>
+			<div class="cabezal-libros">Detalle</div>
+			<div class="celda-libros">Acero Líquido</div>
+			<div class="celda-libros">Eduardo Mazzitelli y Quique Alcatena</div>
+			<div class="celda-portada">
+				<img src="img/libros/aceroliquido.jpg" class="portadas-libros" alt="Acero Liquido">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/aceruliquido.html">+ info</a>
+			</div>
+			<div class="celda-libros">La liga del mal: la cuenta final</div>
+			<div class="celda-libros">Baró, Ganem y más...</div>
+			<div class="celda-portada">
+				<img src="img/libros/ligadelmal.jpg" class="portadas-libros" alt="Liga del Mal: la cuenta final">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/ligaldemal.html">+ info</a>
+			</div>
+			<div class="celda-libros">Cardal</div>
+			<div class="celda-libros">Martín Bentancor y Dante Ginevra</div>
+			<div class="celda-portada">
+				<img src="img/libros/cardal.jpg" class="portadas-libros" alt="Cardal">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/cardal.html">+ info</a>
+			</div>
+			<div class="celda-libros">Hostil y abyecto</div/>
+			<div class="celda-libros">Fernando Baldó</div>
+			<div class="celda-portada">
+				<img src="img/libros/hostilyabyecto.jpg" class="portadas-libros" alt="Hostil y abyecto">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/hostilyabyecto.html">+ info</a>
+			</div>
+			<div class="celda-libros">Pancho El Pitbull</div>
+			<div class="celda-libros">Neal Wooten y Nicolás Peruzzo</div>
+			<div class="celda-portada">
+				<img src="img/libros/panchoelpitbull.jpg" class="portadas-libros" alt="Pancho el Pitbull">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/panchoelpitbull.html">+ info</a>
+			</div>
+			<div class="celda-libros">Pancho El Pitbull 2</div>
+			<div class="celda-libros">Neal Wooten y Nicolás Peruzzo</div>
+			<div class="celda-portada">
+				<img src="img/libros/panchoelpitbull2.jpg" class="portadas-libros" alt="Pancho el Pitbull 2">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/panchoelpitbull2.html">+ info</a>
+			</div>
+			<div class="celda-libros">Quiero Puré</div>
+			<div class="celda-libros">Leo Lagos</div>
+			<div class="celda-portada">
+				<img src="img/libros/quieropure.jpg" class="portadas-libros" alt="Quiero Pure">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/quieropure.html">+ info</a>
+			</div>
+			<div class="celda-libros">Novelas ejemplares de Miguel Cervantes</div>
+			<div class="celda-libros">Alejandro Farías, Federico Reggiani y más...</div>
+			<div class="celda-portada">
+				<img src="img/libros/novelasejemplares.jpg" class="portadas-libros" alt="Novelas ejemplares de Miguel Cervantes">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/novelasejemplares.html">+ info</a>
+			</div>
+			<div class="celda-libros">Cannabis</div>
+			<div class="celda-libros">Roy y Maco</div>
+			<div class="celda-portada">
+				<img src="img/libros/cannabis.jpg" class="portadas-libros" alt="Cannabis">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/cannabis.html">+ info</a>
+			</div>
+			<div class="celda-libros">Parto de nalgas</div>
+			<div class="celda-libros">Ignacio Alcuri y Gustavo Sala</div>
+			<div class="celda-portada">
+				<img src="img/libros/partodenalgas.jpg" class="portadas-libros" alt="Parto de nalgas">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/partodenalgas.html">+ info</a>
+			</div>
+			<div class="celda-libros">Tupamaros: La fuga</div>
+			<div class="celda-libros">Roy y Lauri Fernández</div>
+			<div class="celda-portada">
+				<img src="img/libros/tupamaros.jpg" class="portadas-libros" alt="Tupamaros la fuga">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/tupamaros.html">+ info</a>
+			</div>
+			<div class="celda-libros">El viejo</div>
+			<div class="celda-libros">Alceo y Matías Bergara</div>
+			<div class="celda-portada">
+				<img src="img/libros/elviejo.jpg" class="portadas-libros" alt="El viejo">
+			</div>				
+			<div class="celda-libros">
+				<a href="libros/elviejo.html">+ info</a>
+			</div>
+			<div class="celda-libros">Orange Shaft</div>
+			<div class="celda-libros">Roy</div>
+			<div class="celda-portada">
+				<img src="img/libros/orangeshaft.jpg" class="portadas-libros" alt="Orange Shaft">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/orangeshaft.html">+ info</a>
+			</div>
+			<div class="celda-libros">7 historias</div>
+			<div class="celda-libros">Tunda</div>
+			<div class="celda-portada">
+				<img src="img/libros/7historias.jpeg" class="portadas-libros" alt="7 Historias">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/7historias.html">+ info</a>
+			</div>
+			<div class="celda-libros">Cena con amigos</div>
+			<div class="celda-libros">Rodolfo Santullo y Marcos Vergara</div>
+			<div class="celda-portada">	
+				<img src="img/libros/cenaconamigos.jpg" class="portadas-libros" alt="Cena con amigos">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/cenaconamigos.html">+ info</a>
+			</div>
+			<div class="celda-libros">Los últimos días del Graf Spee</div>
+			<div class="celda-libros">Rodolfo Santullo y Matías Bergara</div>
+			<div class="celda-portada">
+				<img src="img/libros/grafspee.jpg" class="portadas-libros" alt="Los ultimos dias del Graf Spee">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/grafspee.html">+ info</a>
+			</div>
+			<div class="celda-libros">Bernardina hacia la tormenta</div>
+			<div class="celda-libros">Matías Castreo y Daniel González</div>
+			<div class="celda-portada">
+				<img src="img/libros/bernardina.jpg" class="portadas-libros" alt="Bernardina hacia la tormenta">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/bernardina.html">+ info</a>
+			</div>
+			<div class="celda-libros">Sangre y Sol</div>
+			<div class="celda-libros">Abel Alves y Nahus</div>
+			<div class="celda-portada">
+				<img src="img/libros/sangreysol.jpg" class="portadas-libros" alt="Sangre y sol">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/sangreysol.html">+ info</a>
+			</div>
+			<div class="celda-libros">Palabra</div>
+			<div class="celda-libros">Sebastián Santana</div>
+			<div class="celda-portada">
+				<img src="img/libros/palabra.jpg" class="portadas-libros" alt="Palabra">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/palabra.html">+ info</a>
+			</div>
+			<div class="celda-libros">Testimonios oscuros</div>
+			<div class="celda-libros">Fernando Ramos</div>
+			<div class="celda-portada">
+				<img src="img/libros/testimoniososcuros.jpg" class="portadas-libros" alt="Testimonios Oscuros">
+			</div>
+			<div class="celda-libros">
+				<a href="libros/testimoniososcuros.html">+ info</a>
+			</div>
+		</div>
+		
+		<div class="mas-libros">
+			<a href="#">Volver al principio</a>
+			<a href="libros/listacompleta.html">Más publicaciones</a>
+		</div>
+	
+
+	<footer class="container-fluid my-0">
+		<div class="row d-flex flex-row justify-content-between align-items-center mt-4">
+			<p class="text-light col-7">© 2011-2020 AUCH! Todos los derechos reservados</p>
+			<div class="redes col-2 mr-0 px-5">
+				<a href="https://www.facebook.com/auchistorietas" target="_blank">
+					<img src="img/facebook.png" class="rounded-lg mx-2 my-3" id="icon-facebook">
+				</a>
+				<a href="https://twitter.com/auchistorietas" ta rget="_blank">
+					<img src="img/twitter.png" class="rounded-lg mx-2 my-3" id="icon-twitter">
+				</a>
+				<a href="https://www.instagram.com/auchistorietas" target="_blank">
+					<img src="img/instagram.png" class="rounded-lg ml-2 my-3" id="icon-instagram">
+				</a>
+				</p>
+			</div>
+	</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
