@@ -452,14 +452,16 @@ form {
       margin-top: 2vh; }
   .titulos-notas {
     font-size: 1.1rem; }
-  .second-row .articulos {
-    max-width: 30vw; }
-  .second-row img {
+  .second-row .articulos, .second-row img {
     max-width: 30vw; }
   #search {
     display: none; }
   .linea-final {
-    margin-left: 0; } }
+    margin-left: 0; }
+  form {
+    left: 30%; }
+    form input {
+      max-width: 30vw; } }
 
 @media (max-width: 575px) {
   header nav a {
@@ -497,4 +499,12 @@ form {
     margin-top: 0;
     position: relative;
     left: 25%;
-    top: 0%; } }
+    top: 0%; }
+  form {
+    left: 5%;
+    max-width: 90%; }
+    form input {
+      max-width: 40vw; }
+    form #limpiar {
+      margin-right: 10vw;
+      max-width: 50vw; } }
