@@ -55,7 +55,7 @@ footer {
   font-weight: bolder;
   font-size: 2.2rem; }
 
-.subtitles {
+.subtitles, .subtitles-historia {
   color: #75b3ff;
   font-weight: normal;
   font-style: italic; }
@@ -120,11 +120,19 @@ footer {
     margin-bottom: 1vh; }
 
 .imagenes-historia {
-  width: 250px;
+  width: 350px;
   padding-bottom: 0px;
   margin-bottom: 1vh;
   margin-left: 1vw;
   border-radius: 20px; }
+
+#historiauno {
+  position: relative;
+  left: 35%; }
+
+#historiados {
+  margin-left: 30%;
+  left: 0; }
 
 .imagenes-historiados {
   height: 250px;
@@ -132,7 +140,9 @@ footer {
   margin-bottom: 0px;
   margin-left: 1vw;
   border-radius: 20px;
-  margin-bottom: 1vh; }
+  margin-bottom: 1vh;
+  position: relative;
+  left: 35%; }
 
 #header-artistas {
   padding-left: 0px;
@@ -443,6 +453,21 @@ form {
     header nav a {
       font-size: 1.1rem;
       padding-left: 1vw; }
+  .subtitles-historia {
+    text-align: center; }
+  .historia p {
+    max-width: 95%;
+    margin-left: 2vw;
+    margin-right: 2vw; }
+  #historiauno {
+    left: 25%;
+    max-width: 60vw; }
+  #historiados {
+    margin-left: 8%; }
+  #historiados, #historiatres {
+    max-width: 40vw; }
+  .imagenes-historiados {
+    left: 20%; }
   #bottom-tres {
     display: none; }
   .header-noticias {
@@ -467,6 +492,17 @@ form {
   header nav a {
     font-size: .6rem;
     padding: .2rem; }
+  .historia p {
+    text-align: justify; }
+  .subtitles-historia {
+    font-size: 1.7rem; }
+  #historiauno, #historiados, .imagenes-historiados {
+    max-width: 93vw;
+    margin-left: 2vw;
+    position: relative;
+    left: 0; }
+  #historiatres {
+    display: none; }
   .articulos p {
     display: none; }
   #textodos h2, #textotres h2 {
