@@ -453,6 +453,14 @@ form {
     header nav a {
       font-size: 1.1rem;
       padding-left: 1vw; }
+  .video {
+    left: 0vw; }
+    .video video {
+      left: 0%;
+      max-width: 96vw; }
+  .overlay-video {
+    left: 2vw;
+    top: 8vh; }
   .subtitles-historia {
     text-align: center; }
   .historia p {
@@ -492,8 +500,46 @@ form {
   header nav a {
     font-size: .6rem;
     padding: .2rem; }
+  .video {
+    left: 0%;
+    margin-left: 0;
+    margin-bottom: 0; }
+    .video video {
+      max-width: 93vw;
+      left: 0%;
+      margin-left: 0; }
+  .overlay-video {
+    max-width: 30vw;
+    top: 11vw; }
+    .overlay-video h1 {
+      font-size: 0.9rem; }
+  .overlay-artistas a {
+    left: 6vw;
+    font-size: 0.7rem;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    bottom: 3vw; }
+  .artista-home {
+    width: 93vw;
+    margin-top: 0;
+    border: 1px solid black; }
+  .article-home {
+    font-size: 0.8rem;
+    width: 85px; }
+    .article-home img {
+      width: 83px; }
+  #thumb1 {
+    position: relative;
+    left: 0; }
+  #thumb3 {
+    display: none; }
   .historia p {
     text-align: justify; }
+  #noti-home {
+    font-size: 1.7rem;
+    text-align: center; }
   .subtitles-historia {
     font-size: 1.7rem; }
   #historiauno, #historiados, .imagenes-historiados {
