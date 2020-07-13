@@ -645,6 +645,10 @@ form {
 		padding:.2rem;
 		}
 	
+	.main-title {
+		font-size:1.7rem;
+	}
+
 	.video {
 		left:0%;
 		margin-left:0;
@@ -717,6 +721,20 @@ form {
 
 	#historiatres {
 		display:none;
+	}
+
+	.cabezal-artistas {
+		font-size:1.2rem;
+	}
+
+	.perfil-artistas {
+		max-width:100px;
+		margin-left:0;
+		margin-right:0;
+	}
+
+	.celda-artistas a {
+		font-size:0.9rem;
 	}
 
 	.articulos p {

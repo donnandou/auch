@@ -500,6 +500,8 @@ form {
   header nav a {
     font-size: .6rem;
     padding: .2rem; }
+  .main-title {
+    font-size: 1.7rem; }
   .video {
     left: 0%;
     margin-left: 0;
@@ -549,6 +551,14 @@ form {
     left: 0; }
   #historiatres {
     display: none; }
+  .cabezal-artistas, .cabezal-libros {
+    font-size: 1.2rem; }
+  .perfil-artistas {
+    max-width: 100px;
+    margin-left: 0;
+    margin-right: 0; }
+  .celda-artistas a, .celda-libros a, .celda-portada a {
+    font-size: 0.9rem; }
   .articulos p {
     display: none; }
   #textodos h2, #textotres h2 {
