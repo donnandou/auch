@@ -31,7 +31,7 @@
 		</div>
 	</div>
 
-	<header class="container-fluid my-0">
+	<header class="container-fluid my-0 mb-3">
 		<div class="header row d-flex flex-row align-content-stretch justify-content-between align-items-center justify-items-center mb-3">
 			<div class="logo col-2">
 				<a href="index.html">
@@ -50,7 +50,7 @@
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">	
     						<a class="no-hover dropdown-item pt-4 mt-0" href="#">Dejanos un mensaje</a>
     						<div class="dropdown-divider"></div>
-						    <a class="no-hover dropdown-item pt-4" role="button" href="#modal-news" data-toggle="modal">Suscribite a AUCH! Noticias</a>
+						    <a class="no-hover dropdown-item pt-4" role="button" href="#modal-news" data-toggle="modal">Suscribite a AUCH!</a>
   						</div>
 					</div>
 				</nav>	
@@ -63,22 +63,22 @@
 
 	<h1 class="main-title" id="form-title">Mensajes AUCH!</h1>
 
-	<form action="#" method="POST" class="col-md-6 col-xs-12">
-		<div>
+	<form action="#" method="POST" class="col-lg-3 col-md-6 col-xs-12">
+		<div class="form-group">
 			<label for="name">Nombre completo</label>
-			<input id="name" type="text" placeholder="Juan Perez" name="Nombre" required>
+			<input class="form-control" id="name" type="text" placeholder="Juan Perez" name="Nombre" required>
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="email">E-mail</label>
-			<input id="email" type="email" placeholder="mail@dominio.com" name="email" required>
+			<input class="form-control" id="email" type="email" placeholder="mail@dominio.com" name="email" required>
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="phone">Teléfono</label>
-			<input id="phone" type="number" placeholder ="099123456" name ="telefono">
+			<input class="form-control" id="phone" type="tel" placeholder="099123456" name ="telefono" pattern="[0-9]{9}">
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="motivo">Motivo de contacto</label>
-			<select id="motivo" name="motivo" required>
+			<select class="form-control" id="motivo" name="motivo" required>
 			<option selected disabled>Selecciona una opción</option>
 			<option value="Comprar titulo">Quiero comprar un título</option>
 			<option value="Formar parte">Quiero formar parte de AUCH!</option>
@@ -86,12 +86,12 @@
 		</select> 
 		</div>
 		<p>Comentarios:</p>
-		<div>
+		<div class="form-group">
 			<textarea name="comentarios" id="comentarios" placeholder="Dejanos un mensaje"></textarea>
 		</div>
-		<div>
+		<div class="form-group">
 			<input name="newsletter" type="checkbox" value="1" id="newsletter">
-			<label for="newsletter">Suscribirme a la newsletter de AUCH!</label>
+			<label for="newsletter"id="label-newsletter">Suscribirme a la newsletter de AUCH!</label>
 		</div>
 		<input type="reset" value="Limpiar formulario" id="limpiar">
 		<input type="submit" value="Enviar" id="enviar">

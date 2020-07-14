@@ -12,9 +12,12 @@ body {
 header {
 	height:11vh;
 	background-color:$oscuro;
-
+	margin-bottom:2.5vh;
 	.header { background-color:$oscuro }
-    .logo img {	width:10vw }
+	.logo img {	width:85%;
+				margin-top:0;
+				padding-top:0;			
+	}
 	
 	nav {
 		a {
@@ -182,12 +185,8 @@ $redes: (
 	
 }
 
-#header-artistas {
-	padding-left:0px;
-	margin-left:1vw;
-	img { border:2px solid }
-    }
-
+#artistas-header {margin-top:3vh}
+	
 .tabla-artistas {
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -255,7 +254,7 @@ $redes: (
 	animation-iteration-count:infinite;
 	animation-direction:normal;
 	animation-timing-function:ease;
-	font-size:1.3rem;
+	font-size:1.2rem;
 	color:red;
 }
 
@@ -267,6 +266,10 @@ $redes: (
 
 #title-libros {
 	margin-left:35%;
+}
+
+#carousel-libros {
+	padding-top:2vh;
 }
 
 .tabla-libros {
@@ -323,6 +326,7 @@ $redes: (
 	position:relative;
 	border:1px solid;
 	margin-bottom:0;
+	margin-top:3vh;
 	padding-bottom:0;
 	margin-left:1vw;
 	}
@@ -458,51 +462,44 @@ font-family: "bitter";
 	left:45%;
 }
 
-#form-title {
-	text-align:center;
-}
+#form-title {text-align:center;}
 
 form {
 	margin-top:3vh;
 	margin-right:0;
 	position:relative;
-	left:40%;
+	left:38%;
 	border:2px solid $primario;
-	max-width:22vw;
-	padding-left:20px;
-	padding-right:0;
+	padding-right:0px;
 	padding-top:5px;
 	padding-bottom:10px;
-	
-    div {
+	div {
         margin-top:0.5vh;
         }
-
-    input {
+	input {
         border-top:0;
         border-left:0;
         border-right:0;
         border-bottom:1px solid black;
         outline:none;
-        max-width:10vw;
+        max-width:20vw;
         }
-
-    label {
-        margin-right:1vw;
+	label {
+		margin-right:1vw;
     }
-
     select {
-        margin-bottom:1vh;
-    }
-
-    label, #newsletter {
-        font-size:0.8rem;
-    }
+		margin-bottom:1vh;
+		max-width:50vw;
+	}
+	option {font-family:open-sans}
+    label, #newsletter, p {
+		font-size:1rem;
+	}
 }
 
 #comentarios {
 	height:100px;
-	width:300px;
+	width:22vw;
 }
 
 #limpiar {
@@ -549,13 +546,25 @@ form {
 
 @media (max-width:991px) {
 	header {
-		height:55px;
+		height:80px;
 		padding-bottom:0;
+		margin-bottom:0;
 	    .header {height:55px;}
-        .logo img {
+		.logo {
+			position:relative;
+			width:100%;
+			padding-top:0;
+			padding-left:0;
+			margin-left:0;
+			margin-top:0;
+			top:0;
+			left:0;
+			img {
+			width:130px;
             padding:0;
             margin:0;
-        }
+			}
+		}
         nav {
 			a {
             font-size:1.1rem;
@@ -594,6 +603,12 @@ form {
 		top:8vh;
 	}
 
+	.artista-home {
+		margin-bottom:1vw;
+		padding:0;
+		border:1px solid black;
+	}
+
 	.subtitles-historia {
 		text-align:center;
 	}
@@ -625,6 +640,20 @@ form {
 		display:none;
 	}
 
+	.perfil-artistas {width:15vw;}
+
+	#final-artistas a {
+		transition:none;
+		animation-duration:0s;
+		font-size:1rem;
+		color:blue;
+	}
+
+	#carousel-libros {
+	padding-top:0;
+}
+	.celda-libros a {font-size:1.2rem}
+
 	.celda-portada {
 		margin:0;
 		img {
@@ -648,9 +677,10 @@ form {
 	.header-noticias {
 		left:1%;
 	    img {
-            max-width:95%;
-            margin-top:2vh;
-        }
+			max-width:95%;
+			margin-top:1vh;
+			margin-bottom:2vh;
+            }
     }
 
 	.titulos-notas {
@@ -670,47 +700,65 @@ form {
 	}
 
 	form {
-		left:30%;
-		input {
-			max-width:30vw;
-		}
+		left:26%;
+		input {max-width:30vw;}
+		select {max-width:40vw;}
 	}
+
+	#comentarios {width:43vw;}
 }
 
 @media (max-width:575px) {
-	header nav {
-	 a {
-		font-size:.6rem;
-		padding:.2rem;
+	header {
+		height:50px;
+		nav {
+		a {
+			font-size:.6rem;
+			padding:.2rem;
+			}
 		}
-	.dropdown {
-		padding-top:2.4vh;
+		.logo {
+			position:relative;
+			top:0;
+			margin-top:0;
+			padding-top:0;
+			width:100%;
+			img { 
+				position:absolute;
+				bottom:-1vh;
+				left:-1vw;
+				margin-top:0;
+				padding-top:0;
+				width:130%;
+				}
 		}
+		.dropdown {
+			padding-top:2.4vh;
+			}
+
+		.dropdown-item {
+			background-color:white;
+			font-size:0.8rem;
+			padding-left:3vw;
+			max-height:5vh;
+			max-width:10vw;
+			margin-top:0;
+			padding-bottom:3vh;
+			}
 	}
-
-	.dropdown-item {
-		background-color:white;
-		font-size:0.8rem;
-		padding-left:3vw;
-		max-height:5vh;
-		max-width:10vw;
-		margin-top:0;
-		padding-bottom:3vh;
+		.main-title {
+			font-size:1.7rem;
 		}
 
-	.main-title {
-		font-size:1.7rem;
-	}
-
-	.video {
-		left:0%;
-		margin-left:0;
-		margin-bottom:0;
-		video {
-			max-width:93vw;
+		.video {
 			left:0%;
 			margin-left:0;
-		}
+			margin-bottom:0;
+			video {
+				max-width:93vw;
+				left:0%;
+				margin-left:0;
+			}
 	}
 
 	.overlay-video {
@@ -745,7 +793,12 @@ form {
 	
 	#thumb1 {
 		position:relative;
-		left:0;
+		left:6vw;
+		}
+
+	#thumb2 {
+		position:relative;
+		left:4vw;
 	}
 
 	#thumb3 {
@@ -785,10 +838,11 @@ form {
 		max-width:100px;
 		margin-left:0;
 		margin-right:0;
+		margin-bottom:2vw;
 	}
 
 	.celda-artistas a {
-		font-size:0.9rem;
+		font-size:0.7rem;
 	}
 
 	#title-libros {
@@ -819,6 +873,7 @@ form {
 
 	.celda-libros {
 		font-size:0.9rem;
+		a {font-size:1rem}
 	}
 
 	.celda-portada {
@@ -857,7 +912,10 @@ form {
 	.linea-final {
 	text-align:center;
 	font-size:.8rem;
+	font-size:.8rem;
 	}
+
+	#final-artistas a {font-size:.8rem}
 	
 	#bottom-dos {
 		display:none;
@@ -888,9 +946,10 @@ form {
 	form {
 		left:5%;
 		max-width:90%;
-		input {
-			max-width:40vw;
-		}
+		input {max-width:80vw;}
+		select {max-width:80vw}
+		#comentarios {width:80vw;}
+		#label-newsletter {font-size:.95rem}
 		#limpiar {
 			margin-right:10vw;
 			max-width:50vw;

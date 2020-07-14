@@ -7,11 +7,14 @@ body {
 
 header {
   height: 11vh;
-  background-color: #262626; }
+  background-color: #262626;
+  margin-bottom: 2.5vh; }
   header .header {
     background-color: #262626; }
   header .logo img {
-    width: 10vw; }
+    width: 85%;
+    margin-top: 0;
+    padding-top: 0; }
   header nav a {
     font-size: 1.3rem;
     font-family: "bitter";
@@ -146,11 +149,8 @@ footer {
   position: relative;
   left: 35%; }
 
-#header-artistas {
-  padding-left: 0px;
-  margin-left: 1vw; }
-  #header-artistas img {
-    border: 2px solid; }
+#artistas-header {
+  margin-top: 3vh; }
 
 .tabla-artistas {
   display: grid;
@@ -210,7 +210,7 @@ footer {
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: red; }
 
 @keyframes flash {
@@ -223,6 +223,9 @@ footer {
 
 #title-libros {
   margin-left: 35%; }
+
+#carousel-libros {
+  padding-top: 2vh; }
 
 .tabla-libros {
   display: grid;
@@ -266,6 +269,7 @@ footer {
   position: relative;
   border: 1px solid;
   margin-bottom: 0;
+  margin-top: 3vh;
   padding-bottom: 0;
   margin-left: 1vw; }
 
@@ -384,11 +388,9 @@ form {
   margin-top: 3vh;
   margin-right: 0;
   position: relative;
-  left: 40%;
+  left: 38%;
   border: 2px solid #1c82ff;
-  max-width: 22vw;
-  padding-left: 20px;
-  padding-right: 0;
+  padding-right: 0px;
   padding-top: 5px;
   padding-bottom: 10px; }
   form div {
@@ -399,17 +401,20 @@ form {
     border-right: 0;
     border-bottom: 1px solid black;
     outline: none;
-    max-width: 10vw; }
+    max-width: 20vw; }
   form label {
     margin-right: 1vw; }
   form select {
-    margin-bottom: 1vh; }
-  form label, form #newsletter {
-    font-size: 0.8rem; }
+    margin-bottom: 1vh;
+    max-width: 50vw; }
+  form option {
+    font-family: open-sans; }
+  form label, form #newsletter, form p {
+    font-size: 1rem; }
 
 #comentarios {
   height: 100px;
-  width: 300px; }
+  width: 22vw; }
 
 #limpiar {
   margin-left: 2vw;
@@ -445,13 +450,24 @@ form {
 
 @media (max-width: 991px) {
   header {
-    height: 55px;
-    padding-bottom: 0; }
+    height: 80px;
+    padding-bottom: 0;
+    margin-bottom: 0; }
     header .header {
       height: 55px; }
-    header .logo img {
-      padding: 0;
-      margin: 0; }
+    header .logo {
+      position: relative;
+      width: 100%;
+      padding-top: 0;
+      padding-left: 0;
+      margin-left: 0;
+      margin-top: 0;
+      top: 0;
+      left: 0; }
+      header .logo img {
+        width: 130px;
+        padding: 0;
+        margin: 0; }
     header nav a {
       font-size: 1.1rem;
       padding-left: 1vw; }
@@ -477,6 +493,10 @@ form {
   .overlay-video {
     left: 2vw;
     top: 8vh; }
+  .artista-home {
+    margin-bottom: 1vw;
+    padding: 0;
+    border: 1px solid black; }
   .subtitles-historia {
     text-align: center; }
   .historia p {
@@ -494,6 +514,17 @@ form {
     left: 20%; }
   #bottom-tres {
     display: none; }
+  .perfil-artistas {
+    width: 15vw; }
+  #final-artistas a {
+    transition: none;
+    animation-duration: 0s;
+    font-size: 1rem;
+    color: blue; }
+  #carousel-libros {
+    padding-top: 0; }
+  .celda-libros a {
+    font-size: 1.2rem; }
   .celda-portada {
     margin: 0; }
     .celda-portada img {
@@ -511,7 +542,8 @@ form {
     left: 1%; }
     .header-noticias img {
       max-width: 95%;
-      margin-top: 2vh; }
+      margin-top: 1vh;
+      margin-bottom: 2vh; }
   .titulos-notas {
     font-size: 1.1rem; }
   .second-row .articulos, .second-row img {
@@ -521,24 +553,43 @@ form {
   .linea-final {
     margin-left: 0; }
   form {
-    left: 30%; }
+    left: 26%; }
     form input {
-      max-width: 30vw; } }
+      max-width: 30vw; }
+    form select {
+      max-width: 40vw; }
+  #comentarios {
+    width: 43vw; } }
 
 @media (max-width: 575px) {
-  header nav a {
-    font-size: .6rem;
-    padding: .2rem; }
-  header nav .dropdown {
-    padding-top: 2.4vh; }
-  .dropdown-item {
-    background-color: white;
-    font-size: 0.8rem;
-    padding-left: 3vw;
-    max-height: 5vh;
-    max-width: 10vw;
-    margin-top: 0;
-    padding-bottom: 3vh; }
+  header {
+    height: 50px; }
+    header nav a {
+      font-size: .6rem;
+      padding: .2rem; }
+    header .logo {
+      position: relative;
+      top: 0;
+      margin-top: 0;
+      padding-top: 0;
+      width: 100%; }
+      header .logo img {
+        position: absolute;
+        bottom: -1vh;
+        left: -1vw;
+        margin-top: 0;
+        padding-top: 0;
+        width: 130%; }
+    header .dropdown {
+      padding-top: 2.4vh; }
+    header .dropdown-item {
+      background-color: white;
+      font-size: 0.8rem;
+      padding-left: 3vw;
+      max-height: 5vh;
+      max-width: 10vw;
+      margin-top: 0;
+      padding-bottom: 3vh; }
   .main-title {
     font-size: 1.7rem; }
   .video {
@@ -573,7 +624,10 @@ form {
       width: 83px; }
   #thumb1 {
     position: relative;
-    left: 0; }
+    left: 6vw; }
+  #thumb2 {
+    position: relative;
+    left: 4vw; }
   #thumb3 {
     display: none; }
   .historia p {
@@ -596,9 +650,10 @@ form {
   .perfil-artistas {
     max-width: 100px;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-bottom: 2vw; }
   .celda-artistas a, .celda-libros a, .celda-portada a {
-    font-size: 0.9rem; }
+    font-size: 0.7rem; }
   #title-libros {
     margin-left: 5vw; }
   .carousel-caption {
@@ -618,6 +673,8 @@ form {
     font-size: 1rem; }
   .celda-libros {
     font-size: 0.9rem; }
+    .celda-libros a {
+      font-size: 1rem; }
   .celda-portada {
     width: 32vw; }
     .celda-portada img {
@@ -640,6 +697,9 @@ form {
     left: 25%; }
   .linea-final {
     text-align: center;
+    font-size: .8rem;
+    font-size: .8rem; }
+  #final-artistas a {
     font-size: .8rem; }
   #bottom-dos {
     display: none; }
@@ -661,7 +721,13 @@ form {
     left: 5%;
     max-width: 90%; }
     form input {
-      max-width: 40vw; }
+      max-width: 80vw; }
+    form select {
+      max-width: 80vw; }
+    form #comentarios {
+      width: 80vw; }
+    form #label-newsletter {
+      font-size: .95rem; }
     form #limpiar {
       margin-right: 10vw;
       max-width: 50vw; } }
