@@ -17,8 +17,7 @@ header {
 	.logo img {	width:85%;
 				margin-top:0;
 				padding-top:0;			
-	}
-	
+			  }
 	nav {
 		a {
 		font-size:1.3rem;
@@ -34,23 +33,22 @@ header {
 			transition-timing-function:ease;
 			transition-duration:300ms;
 			font-size:1.5rem;
-		}
-	}
+				}		
+		}		
 		.dropdown {padding-top:3vh}
-}
+	}
 
     .no-hover:hover {
         font-size:1.3rem;
         transition-timing-function:none;
         transition-duration:none;
-}
-
+	}
     #search {
         height:5vh;
         width:15vw;
         }
-    
 }
+
 footer {
 	height:10vh;
 	background-color:$oscuro;
@@ -64,9 +62,9 @@ $redes: (
 );
 
 @each $red, $border-color in $redes {
-#icon-#{$red} {
+	#icon-#{$red} {
 	border:1px solid $border-color;
-}
+	}
 }
 
 .main-title {
@@ -131,11 +129,8 @@ $redes: (
 	max-width:142px;
     &:hover {
         opacity:0.5;
-    }
-}
-
-.article-home img {
-	width:140px;
+	}
+	img {width:140px}
 }
 
 .historia {
@@ -395,12 +390,11 @@ $redes: (
 #textodestacado {
 	grid-area:textouno;
 	padding-bottom:1vh;
+	p {
+		line-height:1.2rem;
+		margin-top:1vh;
+		margin-bottom:1vh;
 	}
-
-#textodestacado p {
-	line-height:1.2rem;
-	margin-top:1vh;
-	margin-bottom:1vh;
 }
 
 #fotodos {
@@ -431,11 +425,10 @@ $redes: (
 	margin-top:0.5vh;
 	margin-left:3%;
 	margin-right:3%;
-	
-    .articulos {
+	.articulos {
 	    width:304px;
 	    padding-bottom:5px;
-	}
+		}
     h2 { font-size:1rem; }
     img {
 	border-bottom:2px solid black;
@@ -491,21 +484,32 @@ form {
 		margin-bottom:1vh;
 		max-width:50vw;
 	}
-	option {font-family:open-sans}
+	option {font-family: "Open Sans"}
     label, #newsletter, p {
 		font-size:1rem;
 	}
+	#comentarios {
+		height:100px;
+		width:22vw;
+	}
+	#limpiar {
+		margin-left:.5vw;
+		margin-right:2vw;
+		margin-top:1vh;
+		background-color:rgba(255, 60, 0, 0.89);
+		color:white;
+		border-radius:5px solid black;
+	}
+	#enviar {
+		margin-top:1vh;
+		padding-left:2vw;
+		padding-right:2vw;
+		background-color:rgb(7, 187, 37);
+		color:white;
+		border-radius:5px solid black;
+	}
 }
 
-#comentarios {
-	height:100px;
-	width:22vw;
-}
-
-#limpiar {
-	margin-left:2vw;
-	margin-top:1vh;
-}
 .carousel-caption {
 	background-color:$oscuro;
 	opacity:0.7;
@@ -519,12 +523,12 @@ form {
 .carousel-control-next-icon { @extend .carousel-control-prev-icon }
 
 .btn {
-	font-family:bitter;
+	font-family: "Bitter";
 	font-weight:bolder;
 }
 
 #dropdown-contacto {
-	font-family:bitter;
+	font-family: "Bitter";
 	font-size:1.3rem;
 	}
 
@@ -571,30 +575,29 @@ form {
             padding-left:1vw;
 			}
 			.dropdown {padding-top:2.35vh}
+			.dropdown .dropdown-menu {
+				top: 0;
+				  right: 100%;
+				  left:auto;
+				  margin-top: 0;
+				margin-right: 0.125rem;
+				}
+		
+			.dropdown-item {
+				background-color:white;
+				font-size:1rem;
+				padding-left:0.3vw;
+				max-height:6vw;
+				margin:0;
+				}
 		}
 	}
 
-	.dropdown .dropdown-menu {
-		top: 0;
-  		right: 100%;
-  		left:auto;
-  		margin-top: 0;
-		margin-right: 0.125rem;
-		}
-
-	.dropdown-item {
-		background-color:white;
-		font-size:1rem;
-		padding-left:0.3vw;
-		max-height:6vw;
-		margin:0;
-		}
-
 	.video {
 		left:0vw;
-	 video {
-		left:0%;
-		max-width:96vw;
+	 	video {
+			left:0%;
+			max-width:96vw;
 		}
 	}
 	
@@ -624,22 +627,10 @@ form {
 		max-width:60vw;
 	}
 
-	#historiados {
-		margin-left:8%;
-		}
-
-	#historiados, #historiatres {
-		max-width:40vw;
-	}
-
-	.imagenes-historiados {
-		left:20%;
-	}
-
-	#bottom-tres {
-		display:none;
-	}
-
+	#historiados {margin-left:8%}
+	#historiados, #historiatres {max-width:40vw}
+	.imagenes-historiados {left:20%}
+	#bottom-tres {display:none}
 	.perfil-artistas {width:15vw;}
 
 	#final-artistas a {
@@ -649,9 +640,7 @@ form {
 		color:blue;
 	}
 
-	#carousel-libros {
-	padding-top:0;
-}
+	#carousel-libros {padding-top:0}
 	.celda-libros a {font-size:1.2rem}
 
 	.celda-portada {
@@ -683,29 +672,30 @@ form {
             }
     }
 
-	.titulos-notas {
-		font-size:1.1rem;
+	.titulos-notas {font-size:1.1rem}
+
+	.first-row img {
+		position:relative;
+		left:-23vw;
 	}
 
-	.second-row .articulos, .second-row img {
-		max-width:30vw;
-			}
+	.second-row .articulos, .second-row img {max-width:30vw}
 
-	#search {
-		display:none;
+	#anteriores {
+		position:relative;
+		left:40vw;
 	}
 
-	.linea-final {
-		margin-left:0;
-	}
+	#search {display:none}
+	.linea-final {margin-left:0}
 
 	form {
 		left:26%;
-		input {max-width:30vw;}
-		select {max-width:40vw;}
+		input {max-width:30vw}
+		select {max-width:40vw}
+		#comentarios {width:43vw}
+		#limpiar {margin-left:2vw}
 	}
-
-	#comentarios {width:43vw;}
 }
 
 @media (max-width:575px) {
@@ -801,9 +791,7 @@ form {
 		left:4vw;
 	}
 
-	#thumb3 {
-		display:none;
-	}
+	#thumb3 {display:none}
 
 	.historia p{
 		text-align:justify;
@@ -815,9 +803,7 @@ form {
 		text-align:center;
 	}
 
-	.subtitles-historia {
-		font-size:1.7rem;
-	}
+	.subtitles-historia {font-size:1.7rem}
 
 	#historiauno, #historiados, .imagenes-historiados {
 		max-width:93vw;
@@ -826,13 +812,9 @@ form {
 		left:0;
 	}
 
-	#historiatres {
-		display:none;
-	}
+	#historiatres {display:none}
 
-	.cabezal-artistas {
-		font-size:1.2rem;
-	}
+	.cabezal-artistas {font-size:1.2rem}
 
 	.perfil-artistas {
 		max-width:100px;
@@ -841,13 +823,8 @@ form {
 		margin-bottom:2vw;
 	}
 
-	.celda-artistas a {
-		font-size:0.7rem;
-	}
-
-	#title-libros {
-		margin-left:5vw;
-		}
+	.celda-artistas a {font-size:0.7rem}
+	#title-libros {margin-left:5vw}
 
 	.carousel-caption {
 		max-width:70vw;
@@ -867,9 +844,7 @@ form {
 		max-width:80vw;
 	}
 
-	.cabezal-libros {
-		font-size:1rem;
-	}
+	.cabezal-libros {font-size:1rem}
 
 	.celda-libros {
 		font-size:0.9rem;
@@ -885,29 +860,35 @@ form {
 		}
 	}
 			
-	.articulos p {
-		display:none;
-	}
-
+	.articulos p, .second-row .articulps p {display:none}
+	
 	#textodos h2, #textotres h2 {
-		font-size:.7rem;
+		font-size:.9rem;
 		position:relative;
-		top:15%;
+		top:6%;
 	}
 
-	.second-row .articulos p {
-		display:none;
-	}
-
+	.first-row img {left:-78vw}
+	
 	.second-row .articulos { 
 	max-width:40vw;
 	position:relative;
     left:10%; 
 }
-
-	#anteriores {
-		left:25%;
+	.notas-links {font-size:.7rem}
+	
+	#link-main { 
+		position:relative;
+		top:2.5vh;
+		font-size:.8rem
 	}
+
+	#main-h2 {
+		position:relative;
+		top:1.5vh;
+	}
+
+	#anteriores {left:25%}
 
 	.linea-final {
 	text-align:center;
@@ -920,19 +901,14 @@ form {
 	#bottom-dos {
 		display:none;
 	}
-
-	.second-row h2 {
-		font-size:1rem;
-	}
-
+	
 	footer {
 		font-size:.8rem;
 		margin:0;
-		}
-
-	footer p {
+		p {
 		margin-bottom:0;
 		text-align:center;
+		}
 	}
 
 	.redes img {
@@ -951,8 +927,8 @@ form {
 		#comentarios {width:80vw;}
 		#label-newsletter {font-size:.95rem}
 		#limpiar {
-			margin-right:10vw;
 			max-width:50vw;
+		#enviar {padding:0}
 		}
 	}
 }
